@@ -5,12 +5,13 @@
     <meta charset="utf-8">
 
     <title>Multimedia and embedding</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://xkfx.github.io/styles/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
+    <style>
+        #CSS-background-images {
+            background-image: url("../../images/sotonami.jpg");
+        }
+    </style>
 </head>
 
 <body>
@@ -19,21 +20,6 @@
     <header>
         <h1>Multimedia and embedding</h1>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#">message board</a></li>
-            <li><a href="#">about me</a></li>
-        </ul>
-
-        <!-- A Search form is another commmon non-linear way to navigate through a website. -->
-
-        <form>
-            <input type="search" name="q" placeholder="Search query">
-            <input type="submit" value="Go!">
-        </form>
-    </nav>
-
     <!-- Here is our page's main content -->
     <main>
 
@@ -42,13 +28,24 @@
             <h2>Multimedia and embedding</h2>
 
             <h3>Images in HTML</h3>
+            <p>【1】</p>
+            <img src="../../images/sotonami.jpg" alt="sotonami's picture" title="sotonami's picture">
 
-            <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
+            <p><textarea rows="2" cols="80" disabled><img src="../../images/sotonami.jpg" alt="sotonami's picture" 
+                title="sotonami's picture" ></textarea></p>
 
-            <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt
-                feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
+            <br>
+            <p>【2】</p>
+            <figure>
+                <img src="images/dinosaur.jpg" alt="The head and torso of a dinosaur skeleton;
+            it has a large head with long sharp teeth" width="300" height="70">
+                <figcaption>figure 与 figcaption 不仅仅用于图片，可以是一段代码，音频等</figcaption>
+            </figure>
 
+            <br>
+            <p>【3】</p>
+            <p id="CSS-background-images">CSS 背景图片</p>
+            <p></p>
             <h3>Another subsection</h3>
 
             <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient
