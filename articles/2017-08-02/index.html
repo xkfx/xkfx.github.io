@@ -33,29 +33,92 @@
 
             <p><textarea rows="2" cols="80" disabled><img src="../../images/sotonami.jpg" alt="sotonami's picture" 
                 title="sotonami's picture" ></textarea></p>
-			<p>裁剪好再上传！不要用 html 调整大小<p>
-			
-            <br>
-            <p>【2】figure 与 figcaption</p>
-            <figure>
-                <img src="images/dinosaur.jpg" alt="The head and torso of a dinosaur skeleton;
+            <p>裁剪好再上传！不要用 html 调整大小
+                <p>
+
+                    <br>
+                    <p>【2】figure 与 figcaption</p>
+                    <figure>
+                        <img src="images/dinosaur.jpg" alt="The head and torso of a dinosaur skeleton;
             it has a large head with long sharp teeth" width="300" height="70">
-                <figcaption>figure 与 figcaption 不仅仅用于图片，可以是一段代码，音频等</figcaption>
-            </figure>
+                        <figcaption>figure 与 figcaption 不仅仅用于图片，可以是一段代码，音频等</figcaption>
+                    </figure>
 
-            <br>
-            <p>【3】CSS 背景图片</p>
-            <p id="CSS-background-images">CSS 背景图片</p>
-            <p></p>
-            <h3>Another subsection</h3>
+                    <br>
+                    <p>【3】CSS 背景图片</p>
+                    <p id="CSS-background-images">CSS 背景图片</p>
+                    <br>
 
-            <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient
-                montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac
-                in est.</p>
+                    <h3>Video and audio content</h3>
 
-            <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis
-                ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is
-                fringille sem nunc vet mi.</p>
+                    <p>【1】插入一段可控制的 video </p>
+                    <video src="rabbit320.webm" controls>
+                        <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.webm">link to the video</a>                            instead.</p>
+                    </video>
+
+                    <br>
+                    <br>
+                    <p>【2】支持多种格式的 video </p>
+                    <video controls>
+                        <source src="rabbit320.mp4" type="video/mp4">
+                        <source src="rabbit320.webm" type="video/webm">
+                        <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a>                            instead.</p>
+                    </video>
+
+                    <br>
+                    <br>
+                    <p>【3】video 的其他属性，例如封面、自动播放等。</p>
+                    <video controls width="400" height="400" autoplay loop muted poster="poster.png">
+                        <source src="rabbit320.mp4" type="video/mp4">
+                        <source src="rabbit320.webm" type="video/webm">
+                        <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a>                            instead.</p>
+                    </video>
+
+                    <br>
+                    <br>
+                    <p>【4】 audio 和 vido 差不多。</p>
+                    <audio controls>
+                        <source src="viper.mp3" type="audio/mp3">
+                        <source src="viper.ogg" type="audio/ogg">
+                        <p>Your browser doesn't support HTML5 audio. Here is a <a href="viper.mp3">link to the audio</a> instead.</p>
+                    </audio>
+
+                    <br>
+                    <br>
+                    <p>【5】字幕！为什么显示不出来？？</p>
+                    <video controls>
+                        <source src="rabbit320.mp4" type="video/mp4">
+                        <source src="rabbit320.webm" type="video/webm">
+                        <track kind="subtitles" src="subtitles_en.vtt" srclang="en">
+                    </video>
+
+                    <br>
+                    <br>
+                    <h3>From object to iframe — other embedding technologies</h3>
+                    <p>【1】iframe 尝试（插入第三方：诸如视屏、地图、 Disqus 等。） </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sEQf5lcnj_o" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5886854.1488736225!2d-122.10806260897259!3d44.75571499023218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e0!3m2!1sen!2sjp!4v1501736562546"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div id="disqus_thread"></div>
+                    <script>
+                        /**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                        /*
+                        var disqus_config = function () {
+                        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                        };
+                        */
+                        (function () { // DON'T EDIT BELOW THIS LINE
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://wyzxkfx.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         </article>
 
         <!-- the aside content can also be nested within the main content -->
@@ -79,7 +142,8 @@
     <footer>
         <p>©Copyright 2050 by nobody. All rights reversed.</p>
     </footer>
-
+    <a href="http://foo.com/bar.html#disqus_thread">Link</a>
+    <script id="dsq-count-scr" src="//wyzxkfx.disqus.com/count.js" async></script>
 </body>
 
 </html>
