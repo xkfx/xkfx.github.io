@@ -29,7 +29,8 @@
 
             <h3>Images in HTML</h3>
             <p>【1】简单的插入图片</p>
-            <img src="../../images/sotonami.jpg" alt="sotonami's picture" title="sotonami's picture">
+            <p><a href="https://twitter.com/sotonami?lang=en">图片来自 石田スイ </a></p>
+            <!-- <img src="../../images/sotonami.jpg" alt="sotonami's picture" title="sotonami's picture"> -->
 
             <p><textarea rows="2" cols="80" disabled><img src="../../images/sotonami.jpg" alt="sotonami's picture" 
                 title="sotonami's picture" ></textarea></p>
@@ -116,9 +117,22 @@
                             s.setAttribute('data-timestamp', +new Date());
                             (d.head || d.body).appendChild(s);
                         })();
-
                     </script>
+
+                    <br>
+                    <br>
+                    <p>【2】安全性问题，比如下面的东西就加载不出来。</p>
+                    <p>另外，(最好)不要在 HTTP 下引用第三方，更多内容参考<a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies">mdn</a>                        </p>
+                    <iframe src="http://www.cnblogs.com/xkxf/p/7225186.html" width="100%" height="500" frameborder="0" allowfullscreen="" sandbox="">
+                    </iframe>
                     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+                    <br>
+                    <br>
+                    <p>【3】其他的一些嵌入方式，例如 object、embed 等</p>
+                    <object data="mypdf.pdf" type="application/pdf" width="400" height="320" typemustmatch>
+                        <p>You don't have a PDF plugin, but you can <a href="myfile.pdf">download the PDF file.</a></p>
+                    </object>
         </article>
 
         <!-- the aside content can also be nested within the main content -->
@@ -142,7 +156,6 @@
     <footer>
         <p>©Copyright 2050 by nobody. All rights reversed.</p>
     </footer>
-    <a href="http://foo.com/bar.html#disqus_thread">Link</a>
     <script id="dsq-count-scr" src="//wyzxkfx.disqus.com/count.js" async></script>
 </body>
 
