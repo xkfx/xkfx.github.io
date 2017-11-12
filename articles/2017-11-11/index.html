@@ -5,13 +5,23 @@
 		<meta charset="utf-8">
 
 		<title>JavaScript collection</title>
-		<link rel="stylesheet" href="../../styles/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+		<style type="text/css">
+			html {
+				font-family: "楷体";
+			}
+			/* 令该模块浮在左上角 */
+			article {
+				height: 25px;
+				position: absolute;
+				z-index: 1;
+				float: right;
+				top: 0px;
+			}
+		</style>
 
 	</head>
 
 	<body>
-
 		<header>
 
 		</header>
@@ -23,63 +33,21 @@
 		<main>
 
 			<article>
-				<h2>JavaScript collection</h2>
 
-				<h3><a href="articles/2017-11-11">用JS绘制一个球</a></h3>
-				<h3><a href="articles/2017-10-06">满天星</a></h3>
-				<h3><a href="articles/2017-10-05">动态的小球</a></h3>
-				<h3><a href="articles/2017-08-09">撞墙的小球</a></h3>
-				<h3><a href="articles/2017-08-02">下大雪</a></h3>
-				<h3><a href="articles/2017-08-02">键盘控制小球</a></h3>
+				<h4>用JS绘制一个球</h4>
+				<h4>满天星</h4>
+				<h4>动态的小球</h4>
+				<h4>撞墙的小球</h4>
+				<h4>下大雪</h4>
+				<h4>键盘控制小球</h4>
 
 			</article>
-
-			<!--<aside>
-            <h2>Related</h2>
-
-        </aside>-->
-
+			<div class="ball"></div>
 		</main>
 
 		<footer>
-			<p>©Copyright 2050 by nobody. All rights reversed.</p>
 		</footer>
 		<script id="js" src="ball.js"></script>
-		<script>
-			// JS switcher code
-			var myJS = document.querySelector('#js');
-
-			myImage.onclick = function() {
-				var mySrc = myImage.getAttribute('src');
-				if(mySrc === 'images/firefox-icon.png') {
-					myImage.setAttribute('src', 'images/firefox2.png');
-				} else {
-					myImage.setAttribute('src', 'images/firefox-icon.png');
-				}
-			}
-
-			// Personalized welcome message code
-
-			var myButton = document.querySelector('button');
-			var myHeading = document.querySelector('h1');
-
-			function setUserName() {
-				var myName = prompt('Please enter your name.');
-				localStorage.setItem('name', myName);
-				myHeading.innerHTML = 'Mozilla is cool, ' + myName;
-			}
-
-			if(!localStorage.getItem('name')) {
-				setUserName();
-			} else {
-				var storedName = localStorage.getItem('name');
-				myHeading.innerHTML = 'Mozilla is cool, ' + storedName;
-			}
-
-			myButton.onclick = function() {
-				setUserName();
-			}
-		</script>
 	</body>
 
 </html>
