@@ -1,0 +1,76 @@
+html {
+	user-select: none;
+}
+
+body {
+	font-size: 0.6875em;
+	font-family: "Courier New", Courier, Monaco;
+	color: white;
+	background: black;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#header {
+	/* 其实用不用 auto 都是一样的，除非规定宽度 */
+	margin: 5.45455em auto 4.09091em;
+	height: auto;
+	text-align: center;
+}
+
+hgroup {
+    margin: 0 auto;
+    width: 34.66em;
+    /* 试过之后发现，用 em 放大缩小后 logo 会变形*/
+}
+
+.logo {
+	/* 属性*/
+	font-style: italic;
+	font-size: 4em;
+	color: white;
+	background: red;
+	/* 大小 */
+	margin: 0;
+    /* 位置 */
+}
+
+time {
+	display: block;
+	font-size: 1.09091em;
+    margin: 1.33333em 0 0 0;
+}
+
+b {
+	font-weight: normal;
+}
+
+#wrap {
+	/* 类比 header 写就可以了 */
+	height: auto;
+	/* 中心元素位置*/
+	margin: 0 auto auto;
+	width: 60.5em;
+}
+
+nav {
+	margin-top: 9.3em;
+	margin-left: 18.3em;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	margin-bottom: 1.36364em;
+}
+
+a:hover,
+a:focus {
+	color: white;
+	background-color: red
+}

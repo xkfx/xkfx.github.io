@@ -2,63 +2,30 @@
 <html>
 
 	<head>
-		<meta charset="utf-8">
-
-		<title>MY STATIC PAGE</title>
-		<link rel="stylesheet" href="styles/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-		<style type="text/css">
-			/* 令video模块固定 */
-			video {
-				position: absolute;
-				z-index: -1;
-				float: right;
-				left: 0px;
-				top: 0px;
-			}
-			header {
-				opacity: 0;
-			}
-			/* 背景透明文字不透明！*/
-			main,article,aside {
-				opacity: 0.85;
-				background-color: rgba(0,0,0,0.00001);
-			} 
-			
-		</style>
+		<meta charset="utf-8" />
+		<title>My Static Page</title>
+		<link rel="stylesheet" href="styles/hello.css" />
 	</head>
 
 	<body>
-
-		<header>
+		<header id="header">
+			<hgroup>
+				<h1 class="logo"><a href="#">My Static Page</a></h1>
+				<time><b>03/04/2018 09:46am</b> <span id="time-zone-name">NYC</span></time>
+			</hgroup>
 		</header>
-		<video width="1273" autoplay loop muted poster="poster.png">
-			<source src="images/DOQmxFKUQAAaxLG.mp4" type="video/mp4">
-			<p>Your browser doesn't support HTML5 video. Here is a
-				<a href="images/DOQmxFKUQAAaxLG.mp4">link to the video</a> instead.</p>
-		</video>
+		<div id="wrap">
+			<nav>
+				<ul>
+					<li><a class="website_link" accesskey="s">taotao 商城</a></li>
+					<li><a class="website_link" accesskey="s">shop</a></li>
+					<li><a class="website_link" accesskey="s">random</a></li>
+					<li><a class="website_link" accesskey="s">about me</a></li>
+				</ul>
+			</nav>
+		</div>
 		
-		<main>
-
-			<article>
-				<h2>articles</h2>
-
-				<h3><a href="articles/2017-11-11">JavaScript collection</a></h3>
-				<h3><a href="articles/2017-10-06">Random note</a></h3>
-				<h3><a href="articles/2017-10-05">My codebox</a></h3>
-				<h3><a href="articles/2017-08-09">HTML table basics</a></h3>
-				<h3><a href="articles/2017-08-02">Multimedia and embedding</a></h3>
-
-			</article>
-
-			<aside>
-				<h2>related</h2>
-
-			</aside>
-
-		</main>
-
-
+		<!-- 源代码抄自 supreme.com -->
+		<footer></footer>		
 	</body>
-
 </html>
