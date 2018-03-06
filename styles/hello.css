@@ -7,7 +7,7 @@ body {
 	font-family: "Courier New", Courier, Monaco;
 	color: white;
     background: #ccc;
-	background-image: url(../image/hi.jpg) repeat-x;
+	background-image: url(image/hi.jpg);
 }
 
 a {
