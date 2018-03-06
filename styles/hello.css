@@ -6,7 +6,8 @@ body {
 	font-size: 0.6875em;
 	font-family: "Courier New", Courier, Monaco;
 	color: white;
-	background: black;
+    background: #ccc;
+	background-image: url(../image/hi.jpg) repeat-x;
 }
 
 a {
